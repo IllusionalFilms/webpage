@@ -1,0 +1,180 @@
+
+
+body {
+    min-height: 100vh;
+    overflow-y: scroll;
+    font-size: (200px, 50%, 600px);
+}
+
+.bgImage {
+    position: relative;
+    width: 100%;
+    height: 2000px; /* Adjust as needed */
+    overflow-y: scroll; /* Hide overflow content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bgImage::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2250px;
+    background-image: url('bg6.jpg'); 
+    background-size: cover;
+    background-position: center;
+    transform: translateY(-250px);
+    opacity: 0.9; 
+    z-index: 1; 
+}
+
+.mainImage {
+    position: absolute;
+    opacity: 1;
+    z-index: 2;
+    align-self: center;
+    width: 75%;
+    top: 10%;
+}
+
+.smallImage {
+    position: relative;
+    opacity: 1;
+    z-index: 2;
+    width: 20%;
+    margin-right: 0px;
+}
+
+.bodyContainer {
+    position: absolute;
+    opacity: 1;
+    z-index: 2;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    transform: translateY(-175px);
+}
+
+.bodyContainer2 {
+    position: relative;
+    opacity: 1;
+    z-index: 2;
+    width: 75%;
+    display: flex;
+    align-items: left;
+    transform: translateY(0px);
+}
+
+.bodyContainer3 {
+    position: absolute;
+    opacity: 1;
+    z-index: 2;
+    width: 75%;
+    display: flex;
+    align-items: left;
+    transform: translateY(175px);
+}
+.text {
+    flex: 1;
+    color: #ffff99;
+    transform: translateX(50px);
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    z-index: 2;
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+    width: 72.2%;
+    top: 6.5%;
+    background: rgba(0.1, 0.1, 0.1, 9.0) url(
+'https://media.geeksforgeeks.org/wp-content/uploads/20201215124609/Capture-300x14.PNG');
+    background-blend-mode: darken;
+    background-size: cover;
+    color: white;
+    padding: 10px 20px;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list li {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.nav-list li:last-child {
+    margin-right: 0;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-list li a:hover {
+    color: #ffd700;
+}
+
+.castingContainer {
+    position: absolute;
+    opacity: 1;
+    z-index: 2;
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: left;
+    top: 15%;
+}
+
+.castingImages {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+    justify-content: flex-start;
+}
+
+.castingImages img {
+    max-width: 20%;
+    margin: 20px;
+    margin-bottom: 40px;
+    height: auto;
+}
+
+.castingNames {
+    position: absolute;
+    opacity: 1;
+    z-index: 3;
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: left;
+    top: 15%;
+}
+
+.castingNames p {
+    max-width: 20%;
+    margin: 103px;
+    margin-bottom: 40px;
+    height: auto;
+    color: white;
+}
+
+.AboutUs {
+    position: absolute;
+    color: #ffff99;
+    text-align: left;
+    z-index: 2;
+    top: 300px;
+    font-size: 16px;
+    line-height: 1.5;
+}
